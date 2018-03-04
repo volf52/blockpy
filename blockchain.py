@@ -267,7 +267,7 @@ def register_nodes():
 def consensus():
     replaced = blockchain.resolve_conflicts()
 
-    if replaces:
+    if replaced:
         response = {
             'message' : 'Our chain was replaced',
             'new_chain' : blockchain.chain
